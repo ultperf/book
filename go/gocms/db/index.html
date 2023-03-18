@@ -3,12 +3,12 @@ gocms database schema layout
 
 user
 
-i - unique index registration date + unique id
-u - username
-e - email
-p - password
-m - mobile phone
-s - status
+i - unique index registration date + unique id (8 bytes)
+u - username (15 bytes)
+e - email (36 bytes)
+p - password (16bytes)
+m - mobile phone (16bytes)
+s - status (1 byte)
 
 
 create table `u` (
